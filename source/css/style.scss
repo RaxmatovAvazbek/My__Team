@@ -25,10 +25,23 @@ $h2-weight: 700;
 $Deep-Jungle: #004047;
 //====h1 style start====
 
+// ===h3 style start====
+$h3-size: 18px;
+$h3-line-height: 28px;
+$h3-weight: 700;
+$h3-color: #79C8C7;
+//====h3 style start====
+
 //====p style start====
 $paragraph-size: 18px;
 $paragraph-line-h: 28px;
 $paragraph-weight: 600;
+//=====p style end======
+
+//====p style start====
+$p-size: 15px;
+$p-line-h: 25px;
+$p-weight: 600;
 //=====p style end======
 
 $container-width: 1110px;
@@ -119,11 +132,14 @@ header {
 
 // =======MAIN ABOUT QISMI BOSHLANISHI====
 .main {
-   padding: 50px 0;
+  min-height: 100vh;
+  padding: 50px 0;
+
   .about__container {
+    height: 50vh;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     .text__h1 h1{
         font-size: $h1-heading;
         color: $text-color;
@@ -138,15 +154,10 @@ header {
         color: $text-color;
       }
   }
-}
-// =======MAIN ABOUT QISMI TUGASHI========
 
-
-
-// =======SECTION ABOUT QISMI BOSHLANISHI====
-  .section {
+   .section {
+    height: 80vh;
     background-color: $footer-text-color;
-    padding: 50px 0;
     .about__container {
       display: flex;
       justify-content: space-between;
@@ -179,5 +190,52 @@ header {
       }
     }
   }
+  .client {
+    text-align: center;
+    .heading h2{
+      color: $text-color;
+      font-size: $h2-heading;
+      font-weight: $h2-weight;
+      line-height: $h2-line-height;
+    }
+     .client__inner {
+        
+      .box__container {
+        display: flex;
+        justify-content: space-between;
+        color: $text-color;
 
+        .box {
+          padding: 20px;
+          p {
+            font-size: $p-size;
+            font-weight: $p-weight;
+            line-height: $p-line-h;
+            margin-bottom: 25px;
+          }
+         .text {
+          margin-bottom: 30px;
+          h3 {
+            font-size: $h3-size;
+            font-weight: $h3-weight;
+            line-height: $h3-line-height;
+            color: $h3-color;
+          }
+          span {
+            margin-bottom: 20px;
+            color: $text-color;
+          }
+         }
+        }
+      }
+     }
+  }
+
+}
+// =======MAIN ABOUT QISMI TUGASHI========
+
+
+
+// =======SECTION ABOUT QISMI BOSHLANISHI====
+ 
 // =======SECTION ABOUT QISMI TUGASHI========

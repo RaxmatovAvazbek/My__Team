@@ -89,19 +89,21 @@ header .header__container .button .btn:hover {
 }
 
 .main {
+  min-height: 100vh;
   padding: 50px 0;
 }
 
 .main .about__container {
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .about__container .text__h1 h1 {
@@ -120,12 +122,12 @@ header .header__container .button .btn:hover {
   color: #ffff;
 }
 
-.section {
+.main .section {
+  height: 80vh;
   background-color: #012f34;
-  padding: 50px 0;
 }
 
-.section .about__container {
+.main .section .about__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,14 +139,14 @@ header .header__container .button .btn:hover {
           align-items: flex-start;
 }
 
-.section .about__container .text__h1 h1 {
+.main .section .about__container .text__h1 h1 {
   font-size: 50px;
   font-weight: 700;
   line-height: 56px;
   color: #ffff;
 }
 
-.section .about__container .box__container {
+.main .section .about__container .box__container {
   max-width: 445px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,19 +160,67 @@ header .header__container .button .btn:hover {
   gap: 3rem;
 }
 
-.section .about__container .box__container .box {
+.main .section .about__container .box__container .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 
-.section .about__container .box__container .box span {
+.main .section .about__container .box__container .box span {
   color: #f67e7e;
 }
 
-.section .about__container .box__container .box p {
+.main .section .about__container .box__container .box p {
   margin-top: 10px;
+  color: #ffff;
+}
+
+.main .client {
+  text-align: center;
+}
+
+.main .client .heading h2 {
+  color: #ffff;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.main .client .client__inner .box__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffff;
+}
+
+.main .client .client__inner .box__container .box {
+  padding: 20px;
+}
+
+.main .client .client__inner .box__container .box p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.main .client .client__inner .box__container .box .text {
+  margin-bottom: 30px;
+}
+
+.main .client .client__inner .box__container .box .text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #79C8C7;
+}
+
+.main .client .client__inner .box__container .box .text span {
+  margin-bottom: 20px;
   color: #ffff;
 }
 /*# sourceMappingURL=style.css.map */
