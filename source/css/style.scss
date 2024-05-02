@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&family=Quicksand&family=Roboto&display=swap");
+
+// =======QITYMATLAR=======
+$body-font-famil: "Livvic", sans-serif;
+$backround-colo: #014e56;
+$Midnight-Green: #014e56;
+$span-color: #f67e7e;
+$text-color: #ffff;
+$blac:#0000;
+$text-color-green: #79c8c7;
+$Police-Blue: #2c6269;
+$Deep-Jungle: #004047;
+$footer-text-color: #012f34;
+$Dark-Green: #002529;
+
+$button-p: 10px 25px;
+$button-radius: 50px;
+
+// ===h1 style start====
+$h1-heading: 80px;
+$h1-line-height: 56px;
+$h2-heading: 50px;
+$h2-line-height: 48px;
+$h2-weight: 700;
+$Deep-Jungle: #004047;
+//====h1 style start====
+
+//====p style start====
+$paragraph-size: 18px;
+$paragraph-line-h: 28px;
+$paragraph-weight: 600;
+//=====p style end======
+
+$container-width: 1110px;
+$container-y-pad: 0 20px;
+// =======QITYMATLAR=======
+
+// ========ASOSIYA STILLAR START======
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: $backround-colo;
+  font-family: $body-font-famil;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $container-width;
+  padding: $container-y-pad;
+}
+
+// ======GLOBAL BUTTON START=======
+.btn {
+  padding: $button-p;
+  border: none;
+  background: transparent;
+  border: 1.2px solid $text-color;
+  border-radius: $button-radius;
+  color: $text-color;
+  font-weight: $paragraph-weight;
+  line-height: $paragraph-line-h;
+}
+
+// ======GLOBAL BUTTON END=======
+
+// ========ASOSIY STILLAR END======
+
+// ========HEADER QISMI BOSHLANISHI=======
+header {
+  padding: 60px 0;
+
+  .header__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      margin-right: 50px;
+    }
+    .nav {
+      flex-grow: 1;
+      ul {
+        display: flex;
+        list-style: none;
+        .nav__link {
+          text-decoration: none;
+          color: $text-color;
+          margin-right: 15px;
+          font-size: $paragraph-size;
+          font-weight: $paragraph-weight;
+        }
+      }
+    }
+    .btn {
+      padding: $button-p;
+      border: none;
+      background: transparent;
+      border: 1.2px solid $text-color;
+      border-radius: $button-radius;
+      color: $text-color;
+      font-weight: $paragraph-weight;
+      line-height: $paragraph-line-h;
+    }
+    .button .btn:hover {
+        color: black;
+        background: $text-color;
+    }
+  }
+}
+// ========HEADER QISMI TUGASHI==========
+
+
+// =======MAIN ABOUT QISMI BOSHLANISHI====
+.main {
+   padding: 50px 0;
+  .about__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .text__h1 h1{
+        font-size: $h1-heading;
+        color: $text-color;
+        span {
+          color: $span-color;
+        }
+      }
+      p  {
+        max-width: 440px;
+        font-size: $paragraph-size;
+        line-height: $paragraph-line-h;
+        color: $text-color;
+      }
+  }
+}
+// =======MAIN ABOUT QISMI TUGASHI========
+
+
+
+// =======SECTION ABOUT QISMI BOSHLANISHI====
+  .section {
+    background-color: $footer-text-color;
+    padding: 50px 0;
+    .about__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .text__h1 h1 {
+        font-size: $h2-heading;
+        font-weight: $h2-weight;
+        line-height: $h1-line-height;
+        color: $text-color;
+      }
+      
+      .box__container {
+        max-width: 445px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 3rem;
+        .box {
+          display: flex;
+          gap: 20px;
+          span {
+            color: $span-color;
+          }
+          p {
+            margin-top: 10px;
+            color: $text-color;
+          }
+
+        }
+      }
+    }
+  }
+
+// =======SECTION ABOUT QISMI TUGASHI========
