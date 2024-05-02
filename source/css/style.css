@@ -123,7 +123,7 @@ header .header__container .button .btn:hover {
 }
 
 .main .section {
-  height: 80vh;
+  min-height: 80vh;
   background-color: #012f34;
 }
 
@@ -181,6 +181,7 @@ header .header__container .button .btn:hover {
 }
 
 .main .client .heading h2 {
+  padding: 50px 0;
   color: #ffff;
   font-size: 50px;
   font-weight: 700;
@@ -188,24 +189,38 @@ header .header__container .button .btn:hover {
 }
 
 .main .client .client__inner .box__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
   color: #ffff;
 }
 
 .main .client .client__inner .box__container .box {
-  padding: 20px;
+  padding: 10px;
 }
 
-.main .client .client__inner .box__container .box p {
+.main .client .client__inner .box__container .box .text_p {
+  position: relative;
+}
+
+.main .client .client__inner .box__container .box .text_p p {
+  z-index: 10000;
   font-size: 15px;
   font-weight: 600;
   line-height: 25px;
   margin-bottom: 25px;
+}
+
+.main .client .client__inner .box__container .box .text_p i {
+  z-index: 1;
+  top: -40px;
+  left: 0;
+  right: 0;
+  font-size: 80px;
+  color: #2c6269;
+  position: absolute;
 }
 
 .main .client .client__inner .box__container .box .text {

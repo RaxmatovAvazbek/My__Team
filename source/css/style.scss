@@ -156,7 +156,7 @@ header {
   }
 
    .section {
-    height: 80vh;
+    min-height: 80vh;
     background-color: $footer-text-color;
     .about__container {
       display: flex;
@@ -193,26 +193,41 @@ header {
   .client {
     text-align: center;
     .heading h2{
+      padding: 50px 0;
       color: $text-color;
       font-size: $h2-heading;
       font-weight: $h2-weight;
       line-height: $h2-line-height;
     }
      .client__inner {
-        
+
       .box__container {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
         color: $text-color;
 
         .box {
-          padding: 20px;
+          padding: 10px;
+         .text_p {
+           position: relative;
           p {
+            z-index: 10000;
             font-size: $p-size;
             font-weight: $p-weight;
             line-height: $p-line-h;
             margin-bottom: 25px;
           }
+          i {
+            z-index: 1;
+            top: -40px;
+            left: 0;
+            right: 0;
+            font-size: $h1-heading;
+            color: $Police-Blue;
+            position: absolute;
+          }
+         }
          .text {
           margin-bottom: 30px;
           h3 {
