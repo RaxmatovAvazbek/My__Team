@@ -48,24 +48,26 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.header__container .logo {
+
+.logo {
   margin-right: 50px;
 }
-.header__container .nav {
+
+.nav {
   flex-grow: 1;
 }
-.header__container .nav ul {
+.nav ul {
   display: flex;
   list-style: none;
 }
-.header__container .nav ul .nav__link {
+.nav ul .nav__link {
   text-decoration: none;
   color: white;
   margin-right: 15px;
   font-size: 18px;
   font-weight: 600;
 }
-.header__container .nav .btn {
+.nav .btn {
   padding: 10px 25px;
   border: none;
   background: transparent;
@@ -75,7 +77,7 @@ header {
   font-weight: 600;
   line-height: 28px;
 }
-.header__container .nav .button .btn:hover {
+.nav .button .btn:hover {
   color: black;
   background: white;
 }
@@ -227,4 +229,17 @@ header {
   align-items: center;
   width: 100%;
   padding: 5% 10%;
+}
+.foooter__social .footer__nav li {
+  list-style: none;
+}
+.foooter__social .footer__nav li a {
+  text-decoration: none;
+  color: #797979;
+}
+.foooter__social .box img {
+  margin-left: 10px;
+}
+.foooter__social .box p {
+  color: #797979;
 }/*# sourceMappingURL=style.css.map */

@@ -105,251 +105,262 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-between;
+}
 
-  .logo {
-    margin-right: 50px;
+.logo {
+  margin-right: 50px;
+}
+
+.nav {
+  flex-grow: 1;
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    .nav__link {
+      text-decoration: none;
+      color: $text-color;
+      margin-right: 15px;
+      font-size: $paragraph-size;
+      font-weight: $paragraph-weight;
+    }
   }
 
-  .nav {
-    flex-grow: 1;
 
-    ul {
-      display: flex;
-      list-style: none;
+  .btn {
+    padding: $button-p;
+    border: none;
+    background: transparent;
+    border: 1.2px solid $text-color;
+    border-radius: $button-radius;
+    color: $text-color;
+    font-weight: $paragraph-weight;
+    line-height: $paragraph-line-h;
+  }
 
-      .nav__link {
-        text-decoration: none;
-        color: $text-color;
-        margin-right: 15px;
-        font-size: $paragraph-size;
-        font-weight: $paragraph-weight;
+  .button .btn:hover {
+    color: black;
+    background: $text-color;
+  }
+}
+
+// ========HEADER QISMI TUGASHI==========
+
+
+// =======MAIN ABOUT QISMI BOSHLANISHI====
+.main {
+  .about__container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+
+    .text__h1 {
+      width: 900px;
+    }
+
+    .text__h1 h1 {
+      font-size: $h1-heading;
+      color: $text-color;
+
+      span {
+        color: $span-color;
       }
     }
 
-
-    .btn {
-      padding: $button-p;
-      border: none;
-      background: transparent;
-      border: 1.2px solid $text-color;
-      border-radius: $button-radius;
-      color: $text-color;
-      font-weight: $paragraph-weight;
+    p {
+      max-width: 440px;
+      font-size: $paragraph-size;
       line-height: $paragraph-line-h;
-    }
-
-    .button .btn:hover {
-      color: black;
-      background: $text-color;
+      color: $text-color;
     }
   }
 
-  // ========HEADER QISMI TUGASHI==========
+  .section {
+    height: 100vh;
 
-
-  // =======MAIN ABOUT QISMI BOSHLANISHI====
-  .main {
     .about__container {
       display: flex;
-      height: 100vh;
       justify-content: space-between;
       align-items: center;
-
-      .text__h1 {
-        width: 900px;
-      }
 
       .text__h1 h1 {
-        font-size: $h1-heading;
+        font-size: $h2-heading;
+        font-weight: $h2-weight;
+        line-height: $h1-line-height;
         color: $text-color;
-
-        span {
-          color: $span-color;
-        }
       }
 
-      p {
-        max-width: 440px;
-        font-size: $paragraph-size;
-        line-height: $paragraph-line-h;
-        color: $text-color;
+      .box__container {
+        max-width: 445px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 3rem;
+
+        .box {
+          display: flex;
+          gap: 20px;
+
+          span {
+            color: $span-color;
+          }
+
+          p {
+            margin-top: 10px;
+            color: $text-color;
+          }
+
+        }
       }
     }
+  }
 
-    .section {
-      height: 100vh;
+  .client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    text-align: center;
+    padding: 5% 0px;
 
-      .about__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .heading h2 {
+      padding: 50px 0;
+      color: $text-color;
+      font-size: $h2-heading;
+      font-weight: $h2-weight;
+      line-height: $h2-line-height;
+    }
 
-        .text__h1 h1 {
-          font-size: $h2-heading;
-          font-weight: $h2-weight;
-          line-height: $h1-line-height;
-          color: $text-color;
-        }
+    .client__inner {
 
-        .box__container {
-          max-width: 445px;
-          display: flex;
-          justify-content: space-around;
-          flex-direction: column;
-          gap: 3rem;
+      .box__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+        color: $text-color;
 
-          .box {
-            display: flex;
-            gap: 20px;
+        .box {
+          padding: 10px;
 
-            span {
-              color: $span-color;
-            }
+          .text_p {
+            position: relative;
 
             p {
-              margin-top: 10px;
+              z-index: 10000;
+              font-size: $p-size;
+              font-weight: $p-weight;
+              line-height: $p-line-h;
+              margin-bottom: 25px;
+            }
+
+            i {
+              z-index: 1;
+              top: -40px;
+              left: 0;
+              right: 0;
+              font-size: $h1-heading;
+              color: $Police-Blue;
+              position: absolute;
+            }
+          }
+
+          .text {
+            margin-bottom: 30px;
+
+            h3 {
+              font-size: $h3-size;
+              font-weight: $h3-weight;
+              line-height: $h3-line-height;
+              color: $h3-color;
+            }
+
+            span {
+              margin-bottom: 20px;
               color: $text-color;
             }
-
           }
         }
       }
     }
+  }
 
-    .client {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 700px;
-      text-align: center;
-      padding: 5% 0px;
 
-      .heading h2 {
-        padding: 50px 0;
+
+
+  .box__container {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .nav ul li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
         color: $text-color;
-        font-size: $h2-heading;
-        font-weight: $h2-weight;
-        line-height: $h2-line-height;
-      }
-
-      .client__inner {
-
-        .box__container {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap: 15px;
-          color: $text-color;
-
-          .box {
-            padding: 10px;
-
-            .text_p {
-              position: relative;
-
-              p {
-                z-index: 10000;
-                font-size: $p-size;
-                font-weight: $p-weight;
-                line-height: $p-line-h;
-                margin-bottom: 25px;
-              }
-
-              i {
-                z-index: 1;
-                top: -40px;
-                left: 0;
-                right: 0;
-                font-size: $h1-heading;
-                color: $Police-Blue;
-                position: absolute;
-              }
-            }
-
-            .text {
-              margin-bottom: 30px;
-
-              h3 {
-                font-size: $h3-size;
-                font-weight: $h3-weight;
-                line-height: $h3-line-height;
-                color: $h3-color;
-              }
-
-              span {
-                margin-bottom: 20px;
-                color: $text-color;
-              }
-            }
-          }
-        }
-      }
-    }
-
-
-
-
-    .box__container {
-      padding: 50px 20px;
-      display: flex;
-      justify-content: space-between;
-
-      .nav ul li {
-        list-style: none;
-
-        a {
-          text-decoration: none;
-          color: $text-color;
-        }
-      }
-    }
-
-  }
-
-  .footer {
-    width: 100%;
-    padding: 4rem 0;
-    background-color: $span-color;
-
-    .section__title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-
-      p {
-        color: black;
-        font-size: $h2-heading;
-        font-weight: $h2-weight;
-        line-height: $h2-line-height;
       }
     }
   }
 
+}
 
+.footer {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: $span-color;
 
-  .foooter__social {
+  .section__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 5% 10%;
 
-    .footer__nav {
-      li {
-        list-style: none;
+    p {
+      color: black;
+      font-size: $h2-heading;
+      font-weight: $h2-weight;
+      line-height: $h2-line-height;
+    }
+  }
+}
 
-        a {
-          text-decoration: none;
-          color: $text-color;
-        }
+
+
+.foooter__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5% 10%;
+
+  .footer__nav {
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: #797979;
       }
     }
   }
 
-  // =======MAIN ABOUT QISMI TUGASHI========
+  .box {
+    img {
+      margin-left: 10px;
+    }
+
+    p {
+      color: #797979;
+    }
+  }
+}
+
+// =======MAIN ABOUT QISMI TUGASHI========
 
 
 
-  // =======SECTION ABOUT QISMI BOSHLANISHI====
+// =======SECTION ABOUT QISMI BOSHLANISHI====
 
-  // =======SECTION ABOUT QISMI TUGASHI========
+// =======SECTION ABOUT QISMI TUGASHI========
